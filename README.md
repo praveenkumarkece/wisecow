@@ -22,11 +22,11 @@ This will start the server on the default port 4499. If you want to use a differ
 
 6. You should see a cow saying a random fortune on the web page.
 
-If you encounter any errors related to the **fortune** or **cowsay** commands, double-check the paths in the wisecow.sh script to ensure they match the actual locations of the commands on your system.
+If you encounter any errors related to the **fortune** or **cowsay** commands, double-check the paths in the **wisecow.sh** script to ensure they match the actual locations of the commands on your system.
 
 Feel free to explore different fortunes by refreshing the page or opening multiple browser tabs.
 
-Please refer to the **`wisecow.sh`** script for the implementation details.
+Please refer to the <ins> wisecow.sh </ins> script for the implementation details.
 
 Enjoy the wisdom of the cows!
 
