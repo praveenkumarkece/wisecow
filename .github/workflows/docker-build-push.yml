@@ -23,4 +23,5 @@ jobs:
       - name: Build and Push Docker image
         run: |
           docker build -t kpk00700/myfirstapp:latest .
+          docker run -d -p 4499:4499 kpk00700/myfirstapp:latest
           docker push kpk00700/myfirstapp:latest
