@@ -4,6 +4,9 @@ FROM ubuntu:latest
 # Install necessary packages
 RUN apt-get update && apt-get install -y cowsay fortune netcat
 
+# Add additional paths to the PATH environment variable
+ENV PATH="/usr/games:${PATH}"
+
 # Copy the script into the container
 COPY wisecow.sh /app/wisecow.sh
 
