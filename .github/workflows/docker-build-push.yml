@@ -22,6 +22,6 @@ jobs:
 
       - name: Build and Push
         run: |
-          docker build -t <your-registry>/<your-repo>:latest .
-          docker push <your-registry>/<your-repo>:latest
+          docker build -t kpk00700/myfirstapp:latest .
+          docker push kpk00700/myfirstapp:latest
 
