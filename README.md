@@ -26,7 +26,7 @@ If you encounter any errors related to the **fortune** or **cowsay** commands, d
 
 Feel free to explore different fortunes by refreshing the page or opening multiple browser tabs.
 
-Please refer to the <ins> wisecow.sh </ins> script for the implementation details.
+Please refer to the <ins> **wisecow.sh** </ins> script for the implementation details.
 
 Enjoy the wisdom of the cows!
 
