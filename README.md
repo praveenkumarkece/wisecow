@@ -1,7 +1,5 @@
 # Cow wisdom web server
 
-
-
 ``` # MyFirstApp Docker Image
 
 This repository provides a Docker image for running MyFirstApp.
@@ -47,7 +45,6 @@ This project is licensed under the MIT License.
 ``` 
 Feel free to customize and enhance this README file based on the specific details of your MyFirstApp Docker image and any additional instructions you'd like to provide.
  ```
-
 
 ## What to expect?
 ![cow wisdom](https://user-images.githubusercontent.com/9133227/225524281-e81a6673-5550-4db0-9bd0-63f9bbc7c2bc.png)
