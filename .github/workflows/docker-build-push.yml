@@ -1,4 +1,4 @@
-name: Docker Build and Push
+name: Build and Push Docker Image
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Login to Container Registry
@@ -20,8 +20,7 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
 
-      - name: Build and Push Docker image
+      - name: Build and Push
         run: |
           docker build -t kpk00700/myfirstapp:latest .
-          docker run -d -p 4499:4499 kpk00700/myfirstapp:latest
           docker push kpk00700/myfirstapp:latest
