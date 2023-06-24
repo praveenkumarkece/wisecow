@@ -12,8 +12,9 @@ This repository provides a Docker image for running MyFirstApp.
 
 1. Pull the Docker image from Docker Hub:
 
-   ```shell
-   docker pull kpk00700/myfirstapp:latest ```
+   shell
+   docker pull kpk00700/myfirstapp:latest
+```
    
  1. Run the Docker container with port mapping:
  ``` docker run -p 4499:4499 kpk00700/myfirstapp:latest ```
