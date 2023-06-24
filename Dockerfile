@@ -1,9 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y \
-    fortune \
-    cowsay \
-    lolcat
+RUN apt-get update && apt-get install -y cowsay fortune netcat
 
 COPY wisecow.sh /app/wisecow.sh
 
