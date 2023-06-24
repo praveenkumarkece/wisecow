@@ -6,7 +6,7 @@ This repository provides a Docker image for running MyFirstApp.
 
 ## Prerequisites
 
-- **Docker** that Docker is installed on your machine. You can download Docker from the official website: [https://www.docker.com](https://www.docker.com)
+- Docker : Ensure that Docker is installed on your machine. You can download Docker from the official website: [https://www.docker.com](https://www.docker.com)
 
 ## How to Run
 
