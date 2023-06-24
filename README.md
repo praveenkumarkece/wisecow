@@ -1,18 +1,18 @@
 # Cow wisdom web server
 
-``` # MyFirstApp Docker Image
+# MyFirstApp Docker Image
 
 This repository provides a Docker image for running MyFirstApp.
 
 ## Prerequisites
 
-- Docker: Ensure that Docker is installed on your machine. You can download Docker from the official website: [https://www.docker.com](https://www.docker.com)
+- ** Docker: ** Ensure that Docker is installed on your machine. You can download Docker from the official website: [https://www.docker.com](https://www.docker.com)
 
 ## How to Run
 
 1. Pull the Docker image from Docker Hub:
 
-   shell
+```  shell
    docker pull kpk00700/myfirstapp:latest
 ```
    
