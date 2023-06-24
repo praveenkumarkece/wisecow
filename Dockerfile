@@ -1,17 +1,26 @@
-# Use a base image
+# Base image
 FROM ubuntu:latest
 
-# Set the working directory
+# Set working directory
 WORKDIR /app
 
-# Copy the necessary files
-COPY wisecow.sh .
+# Install necessary packages
+RUN apt-get update && apt-get install -y \
+    fortune-mod \
+    cowsay \
+    netcat
 
-# Install dependencies
-RUN apt-get update && apt-get install -y cowsay fortune netcat
+# Copy the script to the container
+COPY wisecow.sh /app/wisecow.sh
 
-# Expose the desired port
+# Make the script executable
+RUN chmod +x /app/wisecow.sh
+
+# Expose the port
 EXPOSE 4499
 
-# Set the command to run the application
-CMD ["./wisecow.sh"]
+# Set the entrypoint command
+CMD ["/app/wisecow.sh"]
+
+# Set PATH environment variable
+ENV PATH="/usr/games:${PATH}"
