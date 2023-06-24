@@ -1,34 +1,52 @@
 # Cow wisdom web server
 
-This is a simple web server that serves cow wisdom using the fortune-mod and cowsay packages. It displays a random cow saying a random fortune.
+
+
+``` # MyFirstApp Docker Image
+
+This repository provides a Docker image for running MyFirstApp.
 
 ## Prerequisites
 
-To run this web server, you need to have the fortune-mod and cowsay packages installed. You can install them by running the following command:
+- Docker: Ensure that Docker is installed on your machine. You can download Docker from the official website: [https://www.docker.com](https://www.docker.com)
 
-```
-sudo apt-get update && apt-get install -y cowsay fortune netcat
-```
+## How to Run
 
-## How to use?
+1. Pull the Docker image from Docker Hub:
 
-1. Clone this repository to your local machine.
-2. Navigate to the repository's directory.
-3. Open the wisecow.sh script and ensure that the paths for fortune and cowsay commands are correctly set. By default, the paths are /usr/games/fortune and /usr/games/cowsay. If the commands are installed in a different location on your system, update the paths accordingly in the script.
-4. Run the following command to start the web server:`./wisecow.sh`
-This will start the server on the default port 4499. If you want to use a different port, you can modify the **SRVPORT** variable inside the **'wisecow.sh'** script.
+   ```shell
+   docker pull kpk00700/myfirstapp:latest ```
+   
+ 1. Run the Docker container with port mapping:
+ ``` docker run -p 4499:4499 kpk00700/myfirstapp:latest ```
+ This command maps port 4499 of the container to port 4499 on the host machine.
 
-5. Open your web browser and navigate to **http://localhost:4499** (replace 4499 with the desired port if you modified it).
+2. Access the application:
 
-6. You should see a cow saying a random fortune on the web page.
+Once the container is running, you can access the application by opening a web browser and navigating to ** http://localhost:4499 **.
 
-If you encounter any errors related to the **fortune** or **cowsay** commands, double-check the paths in the **wisecow.sh** script to ensure they match the actual locations of the commands on your system.
+3. Stop the container:
 
-Feel free to explore different fortunes by refreshing the page or opening multiple browser tabs.
+To stop the running container, use the following command:
 
-Please refer to the <ins> **wisecow.sh** </ins> script for the implementation details.
+``` docker stop <container_id>```
 
-Enjoy the wisdom of the cows!
+Replace <container_id> with the ID or name of the running container. You can get the container ID or name by running docker ps.
+
+## Customization
+If you want to use a different host port, you can modify the port mapping in the ** docker run ** command. For example, to map port 4499 of the container to port 8080 on the host, use the following command:
+
+``` docker run -p 8080:4499 kpk00700/myfirstapp:latest ```
+
+Make sure to update the URL accordingly when accessing the application.
+
+
+## License
+This project is licensed under the MIT License.
+
+``` 
+Feel free to customize and enhance this README file based on the specific details of your MyFirstApp Docker image and any additional instructions you'd like to provide.
+ ```
 
 
 ## What to expect?
